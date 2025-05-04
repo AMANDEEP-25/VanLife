@@ -37,7 +37,6 @@ body {
   padding-inline: 1rem;
 }
 
-header {
 footer,
 .container {
   padding-inline: 1rem;
@@ -81,7 +80,7 @@ header .login-link {
 
 nav {
   display: flex;
-}+}
+}
 
 main {
   margin-bottom: 84px;
@@ -142,7 +141,7 @@ footer {
   -o-background-size: cover;
   background-size: cover;
   min-height: 350px;
-  color: white; 
+  color: white;
   padding: 45px 23px;
   height: 100vh;
   display: flex;
@@ -157,7 +156,9 @@ footer {
 }
 
 @media (min-width: 768px) {
-  .home-container h1 {font-size: 3rem;}
+  .home-container h1 {
+    font-size: 3rem;
+  }
 }
 
 .home-container > p {
@@ -172,7 +173,7 @@ footer {
   border: none;
   width: 100%;
   margin-top: 2rem;
-  padding-block: 0.75rem ;
+  padding-block: 0.75rem;
   padding-inline: 1rem;
   color: white;
   font-weight: 700;
@@ -186,7 +187,9 @@ footer {
 }
 
 @media (min-width: 768px) {
-  .home-container a {max-width: 200px;}
+  .home-container a {
+    max-width: 200px;
+  }
 }
 
 /*** ABOUT PAGE ***/
@@ -200,7 +203,6 @@ footer {
   margin-bottom: 3.5rem;
   padding-inline: 1rem;
 }
-
 
 .about-page-content h1 {
   line-height: 38px;
@@ -231,7 +233,8 @@ footer {
 }
 
 /*** VAN PAGES ***/
-.van-list-container {}
+.van-list-container {
+}
 
 .van-list-filter-buttons {
   display: flex;
@@ -249,10 +252,11 @@ footer {
   gap: 1rem;
   padding-inline: 1rem;
   justify-content: center;
-  
+
   @media (min-width: 768px) {
-  gap: 2rem;
-  margin-top: 57px;
+    gap: 2rem;
+    margin-top: 57px;
+  }
 }
 
 .van-tile a {
@@ -408,7 +412,7 @@ i[class*="van-type-"] {
 
 .host-vans-title {
   padding-inline: 1rem;
-}+}
+}
 
 .host-van-single {
   display: flex;
@@ -439,7 +443,7 @@ i[class*="van-type-"] {
 }
 
 .host-van-detail-layout-container {
-  background-color: white; 
+  background-color: white;
   padding: 1.5rem;
   margin: 30px 26px;
 }
@@ -449,7 +453,7 @@ i[class*="van-type-"] {
   align-items: center;
 }
 
- .host-van-detail > img {
+.host-van-detail > img {
   height: 10rem;
   border-radius: 0.5rem;
   margin-right: 1.25rem;
@@ -585,8 +589,8 @@ i[class*="van-type-"] {
 .host-dashboard-earnings,
 .host-dashboard-reviews,
 .host-dashboard-vans,
-.host-income{
-    padding-inline: 1rem;
+.host-income {
+  padding-inline: 1rem;
 }
 
 .host-dashboard-earnings {
@@ -702,7 +706,7 @@ img.graph {
   margin-bottom: 31px;
   padding: 35px 29px;
   border-radius: 6px;
-}++}
+}
 .host-income .transaction > h3 {
   font-size: 36px;
   font-weight: 600;
@@ -781,4 +785,3 @@ img.graph {
     grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
   }
 }
-
