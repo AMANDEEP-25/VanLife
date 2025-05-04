@@ -81,7 +81,7 @@ header .login-link {
 
 nav {
   display: flex;
-}+}
+}
 
 main {
   margin-bottom: 84px;
@@ -408,7 +408,7 @@ i[class*="van-type-"] {
 
 .host-vans-title {
   padding-inline: 1rem;
-}+}
+}
 
 .host-van-single {
   display: flex;
@@ -702,7 +702,7 @@ img.graph {
   margin-bottom: 31px;
   padding: 35px 29px;
   border-radius: 6px;
-}++}
+}
 .host-income .transaction > h3 {
   font-size: 36px;
   font-weight: 600;
