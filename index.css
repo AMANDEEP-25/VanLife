@@ -119,47 +119,46 @@ footer {
 .home-container {
   background: linear-gradient(0deg, rgba(0, 0, 0, 0.46), rgba(0, 0, 0, 0.46)),
     url("./assets/images/home-hero.png") no-repeat center center;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
   background-size: cover;
   min-height: 350px;
   color: white;
-  padding: 45px 23px;
+  padding: 60px 30px; /* Increased padding for better spacing */
   height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center; /* Center content horizontally */
+  text-align: center; /* Center text alignment */
 }
 
 .home-container h1 {
   font-weight: 700;
-  font-size: 2.25rem;
-  line-height: 42px;
+  font-size: 2.5rem; /* Slightly larger font size */
+  line-height: 1.4;
+  margin-bottom: 20px; /* Added spacing below heading */
 }
 
 .home-container p {
-  line-height: 24px;
+  line-height: 1.6;
+  margin-bottom: 30px; /* Added spacing below paragraph */
 }
 
 .home-container a {
+  max-width: 300px; /* Limit button width */
+  width: 100%;
   display: inline-block;
+  background-color: #ff8c38;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-weight: bold;
   text-align: center;
   text-decoration: none;
-  background-color: #ff8c38;
-  border: none;
-  width: 100%;
-  margin-top: 27px;
-  padding-block: 0.75rem;
-  color: white;
-  font-weight: 700;
-  border-radius: 5px;
-  cursor: pointer;
-  transition: transform 0.1s ease-in-out;
+  transition: background-color 0.3s;
 }
 
 .home-container a:hover {
-  transform: translate(1px, 1px);
+  background-color: #e6762f;
 }
 
 /*** ABOUT PAGE ***/
@@ -217,10 +216,13 @@ footer {
 
 .van-list {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  justify-items: center;
-  gap: 34px;
-  margin-top: 57px;
+  grid-template-columns: repeat(
+    auto-fit,
+    minmax(250px, 1fr)
+  ); /* Responsive grid */
+  gap: 20px; /* Increased gap for better spacing */
+  margin-top: 40px; /* Reduced top margin */
+  padding: 0 20px; /* Added padding for better alignment */
 }
 
 .van-tile a {
@@ -230,7 +232,8 @@ footer {
 
 .van-tile img {
   max-width: 100%;
-  border-radius: 5px;
+  border-radius: 10px; /* Slightly larger border radius */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Added shadow for better visual separation */
 }
 
 .van-list-container button {
@@ -743,4 +746,24 @@ img.graph {
 .host-reviews .review-star {
   color: #ff8c38;
   margin-right: 5px;
+}
+
+/* Updated van-tile for larger blocks */
+.van-tile {
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s;
+}
+
+.van-tile:hover {
+  transform: scale(1.05);
+}
+
+/* Updated van-tile img for larger images */
+.van-tile img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
 }
